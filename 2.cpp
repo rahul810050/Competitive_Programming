@@ -131,23 +131,42 @@
     //     }
         
     // }
+    // #include<bits/stdc++.h>
+    // using namespace std;
+    // int main(){
+    //     for (int i = 1; i <=40; i++)
+    //     {
+    //         cout<<i<<endl;
+    //        if(i==8){
+    //         continue;
+    //        }
+    //        if(i==20){
+    //         cout<<"yo what's up"<<endl;
+    //         continue;
+    //        }
+    //        if(i==30){
+    //         cout<<"niggar"<<endl;
+    //         continue;
+    //        }
+    //     }
+        
+    // }
     #include<bits/stdc++.h>
     using namespace std;
     int main(){
-        for (int i = 1; i <=40; i++)
+        int t ;
+        cin>>t;
+        while (t--)
         {
-            cout<<i<<endl;
-           if(i==8){
-            continue;
+           int x;
+           cin>>x;
+           int sum_digit=0;
+           for (int i = 1; i <=; i++)
+           {
+            /* code */
            }
-           if(i==20){
-            cout<<"yo what's up"<<endl;
-            continue;
-           }
-           if(i==30){
-            cout<<"niggar"<<endl;
-            continue;
-           }
+           
+           
         }
         
     }

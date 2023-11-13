@@ -155,3 +155,172 @@
 // 	}
 // 	return 0;
 // }
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    int n;
+//    cin>>n;
+//    int sum_digit = 0;
+//    while (n>0)
+//    {
+//       int last_digit = n % 10;
+//       sum_digit=  sum_digit + last_digit;
+//       n = n/10;
+//    }
+//    cout<<sum_digit<<endl;
+// }
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    string str;
+//    cin>>str;
+//    for (int i = 0; i < str.size(); i++)
+//    {
+//      cout<<str[i]<<endl;
+//    }
+// }
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    string str;
+//    cin>>str;
+//    string str_rev;
+//    for (int i = str.size() -1;i >=0 ; --i)
+//    {
+//      str_rev.push_back(str[i]);
+//    }
+//    cout<<str_rev;
+// }
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    int t;
+//    cin>>t;
+//    while(t--){
+//       int a;
+//       cin>>a;
+//       int sum_digit = 0;
+//       while(a>0)
+//       {
+//          int last_digit = a % 10;
+//          sum_digit = sum_digit + last_digit;
+//          a = a/10;
+//       }
+//       cout<<sum_digit<<endl;
+//    }
+// }
+//******2D ARRAY******
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    int x,y;
+//    cin>>x>>y;
+//    int a[x][y];
+//    for (int i = 0; i < x; i++)
+//    {
+//      for (int j = 0; j < y; j++)
+//      {
+//       cin>>a[i][j];
+//      }
+   
+//    }
+//     for (int i = 0; i < x; i++)
+//    {
+//      for (int j = 0; j < y; j++)
+//      {
+//       cout<<a[i][j]<<" ";
+//      }
+//      cout<<endl;
+//    }
+   
+// }
+//********3D ARRAY********
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    int x,y,z;
+//    cin>>x>>y>>z;
+//    int a[x][y][z];
+//    for (int i = 0; i < x; i++)
+//    {
+//       for (int j = 0; j < y; j++)
+//       {
+//         for (int k = 0; k < z; k++)
+//         {
+//          cin>>a[i][j][k];
+//         }
+        
+//       }
+      
+//    }
+//    for (int i = 0; i < x; i++)
+//    {
+//       for (int j = 0; j < y; j++)
+//       {
+//         for (int k = 0; k < z; k++)
+//         {
+//          cout<<a[i][j][k]<<" ";
+//         }
+        
+//       }
+//       cout<<endl;
+//    }
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//   int x,y,z;
+//   cin>>x>>y>>z;
+//   int a[x][y];
+//   for (int i = 0; i < x; i++)
+//   {
+//     for (int j = 0; j <y; j++)
+//     {
+//       cin>>a[i][j];
+//     }
+    
+//   }
+//    for (int i = 0; i < x; i++)
+//   {
+//     for (int j = 0; j <y; j++)
+//     {
+//       cout<<a[i][j]<<" ";
+//     }
+//     cout<<endl;
+//   }
+  
+// }
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    int x;
+//    cin>>x;
+//    int a[x];
+//    for (int i = 0; i < x; i++)
+//    {
+//       cin>>a[i];
+//    }
+//    int sum =0;
+//    for (int j = 0; j < x; j++)
+//    {
+//       sum = sum + a[j];
+//    }
+//    cout<<sum;
+   
+// }
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+   int x;
+   cin>>x;
+   for (int i = 1; i <=x; i++)
+   {
+      for (int j = 1; j <=i; j++)
+      {
+        cout<<"*";
+      }
+      cout<<endl;
+   }
+   
+}
