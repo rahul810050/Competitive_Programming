@@ -764,7 +764,7 @@
 // 		hit = (a+b+c)-q;
 // 		cout<<hit<<endl;
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -799,7 +799,7 @@
 // 			cout<<y+(y-1)<<endl;
 // 		}
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -846,7 +846,7 @@
 // 			cout<<"PETROL"<<endl;
 // 		}
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -866,9 +866,9 @@
 // 				break;
 // 			}
 // 		}
-		
+
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -898,9 +898,9 @@
 // 	else{
 // 		cout<<"NO"<<endl;
 // 	}
-		
+
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -918,7 +918,7 @@
 // 			cout<<p<<endl;
 // 		}
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -947,7 +947,7 @@
 // 			cout<<n<<endl;
 // 		}
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -986,9 +986,9 @@
 // 			}
 // 			cout<<count<<endl;
 // 		}
-		
+
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -1008,7 +1008,7 @@
 // 			cout<<"Liquid"<<endl;
 // 		}
 // 	}
-	
+
 // }
 
 //  ******DOUBT********
@@ -1071,7 +1071,7 @@
 // 			cout<<"no"<<endl;
 // 		}
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -1082,9 +1082,9 @@
 // 	{
 // 		if(n%i==0){
 // 			p=max(p,i);
-			
+
 // 		}
-		
+
 // 	}
 // 	cout<<p<<endl;
 // }
@@ -1098,9 +1098,9 @@
 // 			cout<<i<<endl;
 // 			break;
 // 		}
-		
+
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -1120,7 +1120,7 @@
 // 			cout<<"3"<<endl;
 // 		}
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -1141,9 +1141,9 @@
 // 			}
 // 		}
 // 		cout<<count<<endl;
-		
+
 // 	}
-	
+
 // }
 
 // #include<bits/stdc++.h>
@@ -1192,20 +1192,1096 @@
 //     return 0;
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		long long int fact=1;
+// 		for (int i = 2; i <=n; i++)
+// 		{
+// 			fact = fact * i;
+// 		}
+// 		cout<<fact;
+// 	}
 
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-	int t;cin>>t;
-	while (t--)
-	{
-		int n;cin>>n;
-		long long int fact=1;
-		for (int i = 2; i <=n; i++)
-		{
-			fact = fact * i;
-		}
-		cout<<fact;
-	}
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int n;cin>>n;
+// 	int a[n];
+// 	int b=0;
+// 	for (int i = 0; i < n; i++)
+// 	{
+// 		cin>>a[i];
+// 		b+=a[i];
+// 	}
+// 	if(b%2!=0){
+// 		cout<<"No"<<endl;
+// 	}
+// 	else{
+// 		cout<<"Yes"<<endl;
+// 	}
+// 	// for (int i = 0; i < count; i++)
+// 	// {
+
+// 	// }
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int d1,d2,d3,s1,s2,s3;cin>>d1>>d2>>d3>>s1>>s2>>s3;
+// 		int dtotal = d1+d2+d3;
+// 		int stotal = s1+s2+s3;
+// 		if(dtotal>stotal){
+// 			cout<<"Dragon"<<endl;
+
+// 		}
+// 		else if(dtotal<stotal){
+// 			cout<<"Sloth"<<endl;
+
+// 		}
+// 		else{
+// 			if(d1>s1){
+// 				cout<<"Dragon"<<endl;
+
+// 			}
+// 			else if(d1<s1){
+// 				cout<<"Sloth"<<endl;
+
+// 			}
+// 			else if(d2>s2){
+// 				cout<<"Dragon"<<endl;
+
+// 			}
+// 			else if(d2<s2){
+// 				cout<<"Sloth"<<endl;
+
+// 			}
+// 			else{
+// 				cout<<"Tie"<<endl;
+
+// 			}
+// 		}
+
+// 	}
+
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+// 	int t,n,k,a;
+// 	cin>>t;
+// 	while(t--)
+// 	{
+// 	    cin>>n>>k;
+// 	    int count =0,flag=0;
+// 	    for(int i=0;i<n;i++)
+// 	    {
+// 	        cin>>a;
+// 	        if(count+a>=k)
+// 	        count+=a-k;
+// 	        else if(flag==0)
+// 	        flag=i+1;
+// 	    }
+// 	    if(flag>0)
+// 	    cout<<"NO "<<flag<<endl;
+// 	    else
+// 	    cout<<"YES"<<endl;
+// 	}
+// 	return 0;
+// }
+// DOUBT***
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string s;
+// 		cin>>s;int count=0;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			if((s[i]=='a')||(s[i]=='e')||(s[i]=='i')||(s[i]=='o')||(s[i]=='u')){
+// 				continue;
+// 			}
+// 			else{
+// 				count++;
+// 				// if(count>=4){
+// 				// 	break;
+// 				// }
+// 			}
+// 		}
+// 		if(count<=4){
+// 			cout<<"Yes"<<endl;
+// 		}
+// 		else{
+// 			cout<<"No"<<endl;
+// 		}
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n,k;cin>>n>>k;
+// 		for (int i = 1; i <= n; i++)
+// 		{
+// 			int a;cin>>a;
+// 			if(k>=a){
+// 				cout<<"1";
+// 				k=k-a;
+// 			}
+// 			else{
+// 				cout<<"0";
+// 			}
+// 		} cout<<endl;
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		int a[n];
+// 		int b=0;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			cin>>a[i];
+// 			b+=a[i];
+// 		}
+// 		if(b%2==0){
+// 				cout<<"YES"<<endl;
+// 			}
+// 			else{
+// 				cout<<"NO"<<endl;
+// 			}
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		int a[2*n];int count=0;int i;
+// 		for ( i = 0; i < 2*n; i++)
+// 		{
+// 			cin>>a[i];
+// 			for (int j = i; j >=0;j--)
+// 			{
+// 				if(a[i]==a[j]){
+// 					count++;
+// 				}
+// 			}
+
+// 		}
+
+// 		if(count>2){
+// 			cout<<"No"<<endl;
+// 		}
+// 		else cout<<"Yes"<<endl;
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n,k;cin>>n>>k;
+// 		int a[n];
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			cin>>a[i];
+// 		}
+// 		if(k>1){
+// 			cout<<"YES"<<endl;
+// 			// break;
+// 		}
+// 		else{
+// 			int f = 0;
+// 			for (int i = 0; i < n - 1; i++)
+// 			{
+
+// 					if(a[i]>a[i+1]){
+// 						cout<<"NO"<<endl;
+// 						f = 1;
+// 						break;// continue;
+// 					}
+
+// 				}
+// 				if(f==0)
+// 				cout<<"YES"<<endl;
+
+// 			}
+
+// 		}
+
+// 	}
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while(t--){
+// 	int n;cin>>n;
+// 	int a[2*n];
+// 	for (int  i = 0; i < 2*n; i++)
+// 	{
+// 		cin>>a[i];
+// 	}
+// 	int l = 2*n;
+// 	sort(a, a+l);
+// 	// for (int i = 0; i < n; i++)
+// 	// {
+// 	// 	// for (int j = 0; j < n-i-1; j++)
+// 	// 	// {
+// 	// 	// 	if(a[j]>a[j+1]){
+// 	// 	// 		swap(a[j],a[j+1]);
+// 	// 	// 	}
+// 	// 	// }
+// 	// 	cout<<a[i]<<" ";
+
+// 	// }
+// 	// cout<<endl;
+
+// 	int prev = -1;
+// 	int count=1;
+// 	int f =0;
+// 	for (int i = 0; i < 2*n; i++)
+// 	{
+// 		if(a[i]!=prev){
+// 			// cout<<prev<<" "<<count<<endl;
+// 			if(count > 2)
+// 			{
+// 				cout<<"No"<<endl;
+// 				f = 1;
+// 				break;
+// 			}
+// 			prev=a[i];
+// 			count=1;
+// 		}
+// 		else{
+// 				count++;
+// 		}
+// 	}
+// 	if(count > 2 && f == 0)
+// 	{
+// 		cout<<"No"<<endl;
+// 	}
+// 	else if (f == 0)
+// 	{
+// 		cout<<"Yes"<<endl;
+// 	}
+// 	// cout<<prev<<" "<<count;
+// 	}
+
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+// 	int t;
+// 	cin >> t;
+// 	while (t--)
+// 	{
+// 		int n, k, b = 0, ct = 1;
+// 		cin >> n >> k;
+// 		int f = 0;
+// 		int a[n];
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			cin>>a[i];
+// 		}
+
+// 		for (int i = 0; i < n; i++)
+// 		{
+
+// 			b += a[i];
+// 			if (b >= k)
+// 			{
+// 				f = 1;
+// 				ct++;
+// 				b -= k;
+// 			}
+// 			else
+// 			{
+// 				cout << "NO"
+// 						 << " " << ct << endl;
+// 				f = 0;
+// 				break;
+// 			}
+// 		}
+// 		if (f == 1)
+// 		{
+// 			cout << "YES" << endl;
+// 			// break;
+// 		}
+// 	}
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n,x;cin>>n>>x;
+// 		// if((n%2==0)&&(x%2==0)||(n%2==0)&&(x==1)){
+// 		// 	cout<<"YES"<<endl;
+// 		// 	// break;
+// 		// }
+// 		// else if((n%2!=0)&&(x==1)){
+// 		// 	cout<<"YES"<<endl;
+// 		// }
+// 		// if(x>1){
+// 		// if((n%2==0)&&(x%2!=0)){
+// 		// 	cout<<"YES"<<endl;
+// 		// 	// break;
+// 		// }
+// 		// else if((n%2!=0)&&(x%2==0)||(n%2!=0)&&(x%2!=0)){
+// 		// 	cout<<"NO"<<endl;
+// 		// }
+// 		// }
+// 		if(x % 2 == 1 || n % 2 == 0) {
+//             cout << "YES" << endl;
+//         } else {
+//             cout << "NO" << endl;
+//         }
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string s;cin>>s;
+// 		if(n%2==0){
+// 			for (int i = 0; i < n ; i+=2)
+// 			{
+// 				swap(s[i],s[i+1]);
+
+// 			}
+// 		}
+// 		else if(n%2!=0){
+// 			for (int i = 0; i < n - 1; i+=2)
+// 			{
+// 				if(i>=n){
+// 					continue;
+// 				}
+// 				else{
+// 				swap(s[i],s[i+1]);
+
+// 				}
+// 			}
+// 		}
+
+// 		for(int i =0;i<n;i++){
+// 	        s[i] = 'z'-(s[i]-'a');
+
+// 	    }
+
+// 		cout<<s<<endl;
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int A,B;cin>>A>>B;
+// 		  int l = 0;
+// 			int b = 0;
+// 		for (int i = 1;; i++)
+// 		{
+// 			if(i%2!=0){
+// 				l += i;
+// 				if(l>A){
+// 					cout<<"Bob"<<endl;
+// 					break;
+// 				}
+// 			}
+// 			else{
+// 				b += i;
+// 				if(b>B){
+// 					cout<<"Limak"<<endl;
+// 					break;
+// 				}
+// 			}
+// 			// l=l+1;
+// 		}
+
+// 	}
+
+// }
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+// 	int t;
+// 	cin >> t;
+// 	while (t--)
+// 	{
+// 		string s1, s2;
+// 		cin >> s1 >> s2;
+// 		int x = 0, count = 0;
+// 		for (int i = 0; i < s1.length(); i++)
+// 		{
+// 			if (s1[i] != s2[i])
+// 			{
+// 				count++;
+// 			}
+// 			if ((s1[i] == '?' || s2[i] == '?') && (s1[i] != s2[i])){
+// 				count--;
+// 			}
+// 			if(s1[i]=='?'||s2[i]=='?'){
+// 				x++;
+// 			}
+// 		}
+
+// 		cout<<count<<" "<<count+x<<endl;
+// 	}
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		int a[n];
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			cin>>a[i];
+// 		}
+// 		sort(a , a + n);
+// 		int prev = -1;
+// 		int count = 1;int b=0;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			if(a[i]!=prev){
+// 			// cout<<prev<<" "<<count<<endl;
+
+// 			prev=a[i];
+// 			count=1;
+// 		}
+// 		else{
+// 				count++;
+// 		}
+// 		if(b<=count){
+// 				b = count;
+// 			}
+// 			else{
+// 				b=b;
+// 			}
+// 		}
+// 		// cout<<prev<<" "<<count;
+// 		cout<<n-b<<endl;
+
+// 	}
+
+// }
+
+// ****DOUBT****
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string s;
+// 		cin>>s;
+// 		sort(s.begin(),s.end());
+// 		// cout<<s;
+// 		int prev = -1;int count = 1;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			if(prev!=s[i]){
+// 				prev = s[i];
+// 				count = 1;
+// 			}
+// 			else{
+// 				count++;
+// 			}
+// 		}
+// 		if(count%2==0){
+// 			cout<<"YES"<<endl;
+// 		}
+// 		else{
+// 			cout<<"NO"<<endl;
+// 		}
+
+// 	}
+
+// }
+
+// ***DOUBT***
+// #include<bits/stdc++.h>
+// #include<string>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string s;
+// 		cin>>s;
+// 		int f = 0;int count=0;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			if(s[i]=='0'){
+// 				f++;
+// 				if(f==n){
+// 					cout<<"0"<<endl;
+// 					break;
+// 				}
+// 			}
+// 			else{
+// 				count++;
+// 			  if(s[i]=='1'){
+// 				s[i]='0';
+// 			  }
+// 				else{
+// 					s[i]='0';
+// 				}
+// 			}
+// 		}
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			if(s[i]=='1'){
+// 				s.erase(i);
+// 				count++;
+// 			}
+// 		}
+// 		cout<<count<<endl;
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int a,b,c,d,e;cin>>a>>b>>c>>d>>e;
+// 		if(((a+b)<=d) && (c<=e)){
+// 			cout<<"YES"<<endl;
+// 		}
+// 		else if(((c+b)<=d) && (a<=e)){
+// 			cout<<"YES"<<endl;
+// 		}
+// 		else if(((a+c)<=d) && (b<=e)){
+// 			cout<<"YES"<<endl;
+// 		}
+// 		else{
+// 			cout<<"NO"<<endl;
+// 		}
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string s;
+// 		cin>>s;
+// 		sort(s.begin(),s.end());
+// 		// cout<<s;
+// 		int prev = -1;int count = 1;
+// 		int f = 0;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			if(prev!=s[i]){
+// 				if(count%2!=0 && prev != -1){
+// 			f = 1;
+// 			break;
+// 		}
+// 			prev = s[i];
+// 		// cout<<prev<<" "<<count<<endl;
+// 				count = 1;
+// 			}
+// 			else{
+// 				count++;
+// 			}
+// 		}
+// 		if(count % 2 != 0)f = 1;
+// 		if(f == 0){
+// 			cout<<"YES"<<endl;
+// 		}
+// 		else{
+// 			cout<<"NO"<<endl;
+// 		}
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string s;
+// 		cin>>s;
+// 		sort(s.begin(),s.end());
+// 		cout<<s;
+
+// int arr[26] = {0};
+
+// for(int i = 0; i < n; i++)
+// {
+// 	arr[s[i] - 'a'] = arr[s[i] - 'a'] + 1;
+// }
+
+// int f = 0;
+
+// for(int i = 0; i < 26; i++)
+// {
+// 	if(arr[i] % 2 != 0)f = 1;
+// }
+
+// if(f == 0){
+// 	cout<<"YES"<<endl;
+// }
+// else{
+// 	cout<<"NO"<<endl;
+// }
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		long long int n;cin>>n;int x,y;
+// 		if(n%2==0){
+// 			y=x=n/2;
+// 		}
+// 		else{
+// 			x=n/2; y = (n/2)+1;
+// 		}
+// 		int z = x*y;
+// 		cout<<2*z<<endl;
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n,m;cin>>n>>m;
+// 		int x = n-1;
+// 		if(x>=m) cout<<"YES"<<endl;
+// 		else cout<<"NO"<<endl;
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		int a[32];int i = 0;
+
+// 			while (n > 0) {
+
+//         a[i] = n % 2;
+//         n = n / 2;
+//         i++;
+//     }
+// 		int b = 0;
+// 		for ( i = 0; i < 32; i++)
+// 		{
+// 			b+=a[i];
+// 		}
+// 		if(b%2==0) cout<<"EVEN"<<endl;
+// 		else cout<<"ODD"<<endl;
+
+// 	}
+
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int T;
+//     cin >> T;
+
+//     while (T--) {
+//         int N;
+//         cin >> N;
+
+//         int TS = 0;
+//         int MS = 0;
+
+//         for (int i = 0; i < N; ++i) {
+//             int power;
+//             cin >> power;
+//             TS += power;
+//             MS = max(MS, power);
+//         }
+
+//         cout << max(TS - MS + 1, MS) << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int t;
+//     cin >> t;
+
+//     while (T--) {
+//         int n;
+//         cin >> n;
+
+//         int mWeight = 0;
+//         int tpower = 0;
+
+//         for (int i = 0; i < N; ++i) {
+//             int power;
+//             cin >> power;
+//             tpower += power;
+//             mWeight = max(mWeight, power);
+//         }
+
+//         cout << max(tpower - mWeight + 1, mWeight) << endl;
+//     }
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int x,y;cin>>x>>y;
+// 		if(x<50){
+// 			cout<<"Z"<<endl;
+// 		}
+// 		else if((x>=50)&&(y<50)){
+// 			cout<<"F"<<endl;
+// 		}
+
+// 		else cout<<"A"<<endl;
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string s;cin>>s;int count=0;
+// 		int maxPresent = 0;
+
+//     for (int i = 0; i < n; ++i) {
+//         if (s[i] == '1') {
+//             maxPresent++;
+//         }
+//     }
+
+//     for (int i = 0; i < n; ++i) {
+//         for (int j = i; j < n; ++j) {
+//             int presentDays = 0;
+
+//             for (int k = i; k <= j; ++k) {
+//                 if (s[k] == '0') {
+//                     presentDays++;
+//                 } else {
+//                     presentDays = -1;
+//                     break;
+//                 }
+//             }
+//             if (presentDays != -1) {
+//                 maxPresent = max(maxPresent, maxPresent + presentDays);
+//             }
+//         }
+//     }
+//     cout<<maxPresent<<endl;
+// }
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		int a,b;
+// 		if(n%2==0){
+// 			a = b = n/2;
+// 		}
+// 		else{
+// 			b=n/2;
+// 			a = (n/2)+1;
+// 		}
+
+// 		int x = a*b;
+// 		int y = 2*x;
+// 		cout<<y<<endl;
+
+// 	}
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		string s;cin>>s;
+// 		int count=0;
+// 		for (int i = 0; i < s.length(); i++)
+// 		{
+// 			if(s[i]=='>'){
+// 				s[i]='<';
+// 			}
+// 			else if(s[i]=='<'){
+// 				s[i]='>';
+// 			}
+// 		}
+
+// 		for (int i = 0; i < s.length(); i++)
+// 		{
+// 			if((s[i]=='>') && (s[i+1]=='<')){
+// 				count++;
+// 			}
+// 		}
+// 		cout<<count<<endl;
+// 	}
+
+// }
+
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		int p[n];
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			cin>>p[i];
+// 		}
+// 		int x,y;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			if(p[i]==1){
+// 				x=i;
+// 			}
+// 			else if(p[i]==n){
+// 				y = i;
+// 			}
+// 		}
+// 		int operation = x+((n-1)-y);
+
+// 		if(x<y){
+// 			cout<<operation<<endl;
+// 		}
+// 		else cout<<operation-1<<endl;
+		
+// 	}
 	
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		string a,b;cin>>a>>b; int x=0,y=0;
+// 		if(a==b){
+// 			cout<<"YES"<<endl;
+// 		}
+// 		else {
+// 			for (int i = 0; i < n; i++)
+// 			{
+// 				if(a[i]=='1'){
+// 					x++;
+// 				}
+// 				if(b[i]=='1'){
+// 					y++;
+// 				}
+// 			}
+
+// 			if(x!=y){
+// 				cout<<"NO"<<endl;
+// 			}
+// 			else cout<<"YES"<<endl;
+			
+// 		}
+// 	}
+	
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+
+
+// void absDiff(ll a[],ll n){
+// 	ll ct = 0; int f = 0;
+// 	for (int i = 0; i < n; i++)
+// 	{
+// 		a[i] = abs(a[i]-a[i+1]);
+// 	}
+// 	// ct++;
+
+// 	// for (ll i = 0; i < n; i++)
+// 	// {
+// 	// 	for (ll j = i+1; j < n; j++)
+// 	// 	{
+// 	// 		if(a[i]<a[j]){
+// 	// 			f = 1;
+// 	// 			break;
+// 	// 		}
+// 	// 	}
+		
+// 	// }
+// 	// if(f==1) absDiff(a,n);
+// 	// else cout<<ct<<endl;
+	
+// }
+
+// int main(){
+// 	ll t;cin>>t;
+// 	while (t--)
+// 	{
+// 		ll n;cin>>n;
+// 		int a[n];
+// 		for (ll i = 0; i < n; i++)
+// 		{
+// 			cin>>a[n];
+// 		}
+// 		// ll ct = 0;
+
+// 		// absDiff(a,n);
+// 		for (ll i = 0; i < n; i++)
+// 	{
+// 		a[i] = abs(a[i]-a[i+1]);
+// 	}
+// 		for (ll i = 0; i < n; i++)
+// 		{
+// 			cout<<a[i]<<" ";
+// 		}
+		
+		
+		
+// 	}
+	
+// }
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+long long maxsum(int n, vector<int>& arr) {
+    vector<int> new;
+    sort(arr.begin(), arr.end());
+    
+    for (int i = 0; i < 2 * n; i += 2) {
+        new.push_back(min(arr[i], arr[i + 1]));
+    }
+    
+    long long maxOfSum = 0;
+    for (int i = 0; i< new.size();i++) {
+        maxOfSum += new[i];
+    }
+    
+    return maxOfSum;
+}
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int n;
+        cin >> n;
+
+        vector<int> arr(2 * n);
+        for (int i = 0; i < 2 * n; ++i) {
+            cin >> arr[i];
+        }
+
+        long long result = maxsum(n, arr);
+        cout << result << endl;
+    }
+
+    return 0;
 }
