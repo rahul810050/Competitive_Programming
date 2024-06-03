@@ -1773,31 +1773,128 @@
 	
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+
+// int main(){
+// 	ll t;cin>>t;
+// 	while (t--)
+// 	{
+// 		string s;cin>>s;
+// 		int hsh[26] = {0};
+// 		for (int i = 0; i < s.length(); i++)
+// 		{
+// 			hsh[s[i] - 'a']++;
+// 		}
+// 		ll f = 0;
+
+// 		for (int i = 0; i < 26; i++)
+// 		{
+// 			if(hsh[i] >= 2){
+// 				f = 1;
+// 				break;
+// 			}
+// 		}
+
+// 		if(f == 1) cout<<"Yes"<<endl;
+// 		else cout<<"No"<<endl;
+		
+// 	}
+	
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+// // const int N = 10e6+10;
+// // int hsh[N][N];
+
+// int main(){
+// 	ll n,k; cin>>n>>k;
+// 	vector<int> a(n);
+// 	// int hsh[n][n] = {0};
+	
+// 	for (int i = 0; i < n; i++)
+// 	{
+// 		cin>>a[i];
+// 	}
+
+// 	unordered_set<int> see;
+
+
+// 	ll f = 0;
+
+// 	// for (int i = 0; i < n; i++)
+// 	// {
+// 	// 	for(int j = 0; j < n; j++){
+// 	// 		if(hsh[i][j] == k) f = 1;
+// 	// 	}
+// 	// }
+
+// 	for (ll i = 0; i < n; i++)
+// 	{
+// 		if (see.find(k - a[i]) != see.end()) {
+//             f = 1;
+//             break;
+//         }
+// 		see.insert(a[i]);
+// 	}
+	
+
+
+// 	if(f == 1) cout<<"YES"<<endl;
+// 	else cout<<"NO"<<endl;
+	
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+
+// int main() {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     ll n, k;
+//     cin >> n >> k;
+//     vector<int> a(n);
+
+//     for (ll i = 0; i < n; i++) {
+//         cin >> a[i];
+//     }
+
+//     unordered_set<int> seen;
+//     bool found = false;
+
+//     for (ll i = 0; i < n; i++) {
+//         if (seen.find(k - a[i]) != seen.end()) {
+//             found = true;
+//             break;
+//         }
+//         seen.insert(a[i]);
+//     }
+
+//     if (found) {
+//         cout << "YES" << endl;
+//     } else {
+//         cout << "NO" << endl;
+//     }
+
+//     return 0;
+// }
+
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-int hsh[26];
 
 int main(){
-	ll t;cin>>t;
-	while (t--)
+	ll n; cin>>n;
+	ll fac = 1;
+	for (int i = 2; i <= n; i++)
 	{
-		string s;cin>>s;
-		for (int i = 0; i < s.length(); i++)
-		{
-			hsh[s[i] - 'a']++;
-		}
-		ll ct = 0;
-
-		for (int i = 0; i < 26; i++)
-		{
-			if(hsh[i] > 1) ct++;
-		}
-
-		if(ct >= 1) cout<<"Yes"<<endl;
-		else cout<<"No"<<endl;
-		
-		
+		fac *= i;
 	}
-	
+	cout<<fac<<endl;
 }
