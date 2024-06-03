@@ -1885,16 +1885,79 @@
 // }
 
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+
+// int main(){
+// 	ll n; cin>>n;
+// 	ll fac = 1;
+// 	for (int i = 2; i <= n; i++)
+// 	{
+// 		fac *= i;
+// 	}
+// 	cout<<fac<<endl;
+// }
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
+const int N = 10e3;
+int a[N];
+
+void mergeSort(int l,int r,int mid){
+	int l_sz = mid - l + 1;
+	int r_sz = r - mid;
+	 int left[l_sz+1],right[r_sz+1];
+
+	 for (int i = 0; i < l_sz; i++)
+	 {
+		left[i] = a[i+l];
+	 }
+	 for (int i = 0; i < r_sz; i++)
+	 {
+		right[i] = a[i+mid+1];
+	 }
+	 left[l_sz] = right[r_sz] = INT_MAX;
+	 
+	 int l_i = 0;
+	 int r_i = 0;
+
+	 for (int i = l; i <= r; i++)
+	 {
+		 if(left[l_i] <= right[r_i]){
+			a[i] = left[l_i];
+			l_i++;
+		 }
+		 else{
+			a[i] = right[r_i];
+			r_i++;
+		 }
+	 }
+	 
+}
+
+void merge(int l, int r){
+	if(l == r) return;
+
+	int mid = (l+r) / 2;
+	merge(l,mid);
+	merge(mid+1,r);
+	mergeSort(l,r,mid);
+}
 
 int main(){
-	ll n; cin>>n;
-	ll fac = 1;
-	for (int i = 2; i <= n; i++)
+	int n; cin>>n;
+	for (int i = 0; i < n; i++)
 	{
-		fac *= i;
+		cin>>a[i];
 	}
-	cout<<fac<<endl;
+
+	merge(0,n-1);
+
+	for (int i = 0; i < n; i++)
+	{
+		cout<<a[i]<<" ";
+	}
+	
 }

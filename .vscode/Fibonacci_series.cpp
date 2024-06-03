@@ -32,24 +32,44 @@
 
 // CODE WRITTEN BY ME
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+
+// int main(){
+// 	ll n;
+// 	cout<<"Enter a number: ";
+// 	cin>>n;
+// 	ll a = 0,b = 1,c;
+
+// 	cout<<a<<" "<<b<<" ";
+
+// 	for (ll i = 1; i <= n-2; i++)
+// 	{
+// 		c = a + b;
+// 		cout<<c<<" ";
+// 		a = b;
+// 		b = c;
+// 	}
+	
+// }
+
+
 #include<bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-
+typedef long long int ll;
 int main(){
-	ll n;
-	cout<<"Enter a number: ";
-	cin>>n;
-	ll a = 0,b = 1,c;
-
-	cout<<a<<" "<<b<<" ";
-
-	for (ll i = 1; i <= n-2; i++)
+	ll n; cin>>n;
+	ll a = 0, b = 1, c;
+	ll m = 1000000007;
+	// cout<<a<<" "<<b<<" ";
+	for (ll i = 1; i <= n-1; i++)
 	{
 		c = a + b;
-		cout<<c<<" ";
+		// cout<<c<<" ";
 		a = b;
-		b = c;
+		b = c % m;
 	}
+	cout<<b;
 	
 }
