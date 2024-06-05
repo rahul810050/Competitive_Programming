@@ -69,29 +69,66 @@
 
 
 // CONCEPT QUESTION USING MAP
-#include<bits/stdc++.h>
-using namespace std;
-typedef long long int ll;
-int main(){
-	int t;cin>>t;
-	while (t--)
-	{
-		int n;cin>>n;
-		map<ll,ll> mp;
-		for (int i = 0; i < n; i++)
-		{
-			ll x ; cin>>x;
-			mp[x]++;
-		}
-		int f = 0;
-		for (auto pr : mp)
-		{
-			if((pr.second)%(pr.first) !=0){
-				f=1; break;
-			}
-		}
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long int ll;
+// int main(){
+// 	int t;cin>>t;
+// 	while (t--)
+// 	{
+// 		int n;cin>>n;
+// 		map<ll,ll> mp;
+// 		for (int i = 0; i < n; i++)
+// 		{
+// 			ll x ; cin>>x;
+// 			mp[x]++;
+// 		}
+// 		int f = 0;
+// 		for (auto pr : mp)
+// 		{
+// 			if((pr.second)%(pr.first) !=0){
+// 				f=1; break;
+// 			}
+// 		}
 		
-		if(f==0) cout<<"YES"<<endl;
-		else cout<<"NO"<<endl;
-	}
-}
+// 		if(f==0) cout<<"YES"<<endl;
+// 		else cout<<"NO"<<endl;
+// 	}
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	map<int , string> m;
+// 	m[0] = "abc";
+// 	m[1] = "ab";
+// 	m[2] = "bcd";
+// 	m[3] = "hcnw";
+// 	m.insert({7,"xyz"});
+// 	auto it = m.find(3);  // O(log(n))
+// 	cout<<it->first<<" "<<it->second;
+
+// 	// for(auto i: m){     // TO ACCESS ANY VALUE IN MAP ITS TIME COMPLEXITY IS O(log (n))
+// 	// 	cout<<i.first<<" "<<i.second<<endl;
+// 	// }
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// 	map<string,int> m;
+// 	int n;cin>>n;
+// 	for (int i = 0; i < n; i++)
+// 	{
+// 		string s;cin>>s;
+// 		m[s]++;
+// 	}
+
+// 	for(auto i: m){
+// 		cout<<i.first<<" "<<i.second<<endl;
+// 	}
+	
+// }
+
