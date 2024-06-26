@@ -548,33 +548,512 @@
 // }
 
 
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
+// #include <bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
 
-int main() {
+// int main() {
     
-    int t;
-    cin >> t;
-    while (t--) {
-        ll n;
-        cin >> n;
-        unordered_map<int, ll> uMap;
+//     int t;
+//     cin >> t;
+//     while (t--) {
+//         ll n;
+//         cin >> n;
+//         unordered_map<int, ll> uMap;
 
-        for (ll i = 0; i < n; ++i) {
-            int x;
-            cin >> x;
-            uMap[x]++;
+//         for (ll i = 0; i < n; ++i) {
+//             int x;
+//             cin >> x;
+//             uMap[x]++;
+//         }
+
+//         ll max_freq = 0;
+
+//         for (auto &it : uMap) {
+//             max_freq = max(max_freq, it.second);
+//         }
+
+//         cout << n - max_freq << endl;
+//     }
+
+    
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+// int main(){
+//     int t;cin>>t;
+//     while (t--)
+//     {
+//         int n;cin>>n;
+//         vector<pair<int,int>> v(n);
+
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin>>v[i].first>>v[i].second;
+//         }
+        
+//         vector<ll> vec;
+
+//         for (int i = 0; i < n-1; i++)
+//         {
+//             for(int j = i+1; j < n; j++){
+//                 vec[j] = ((v[i].first)*(v[j].second) + (v[j].first)*(v[i].second));
+//             }
+//         }
+//         ll maxi = 0;
+
+//         for (int i = 0; i < vec.size(); i++)
+//         {
+//             maxi = max(maxi,vec[i]);
+//         }
+        
+//         cout<<maxi<<endl;
+//     }
+    
+// }
+
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+
+// int main() {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     int t;
+//     cin >> t;
+//     while (t--) {
+//         int n;
+//         cin >> n;
+//         vector<pair<int, int>> v(n);
+
+//         for (int i = 0; i < n; i++) {
+//             cin >> v[i].first >> v[i].second;
+//         }
+
+//         ll maxi = 0;
+
+//         for (int i = 0; i < n - 1; i++) {
+//             for (int j = i + 1; j < n; j++) {
+//                 ll value = static_cast<ll>(v[i].first) * v[j].second + static_cast<ll>(v[j].first) * v[i].second;
+//                 maxi = max(maxi, value);
+//             }
+//         }
+
+//         cout << maxi << endl;
+//     }
+
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,stud; cin>>n>>stud;
+//     vector<int> v(n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin>>v[i];
+//     }
+
+//     sort(v.begin(),v.end());
+
+//     int min_diff = INT_MAX;
+
+//     for (int i = 0; i + stud -1 < n; i++)
+//     {
+//         min_diff = min((v[i + stud - 1] - v[i]),min_diff);
+//     }
+    
+//     cout<<"minimum difference: "<<min_diff<<endl;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n; cin>>n;
+//     int a[n];
+//     vector<long long> v(n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin>>a[i];
+//     }
+    
+//     for (int i = 0; i < n; i++)
+//     {
+//         for(int j = 0; j < n; j++){
+//             v[j] += a[i] * j;
+//         }
+//     }
+
+//     long long max_sum = 0;
+
+//     for (int i = 0; i < v.size(); i++)
+//     {
+//         max_sum = max(max_sum,v[i]);
+//     }
+
+//     cout<<max_sum<<endl;
+    
+    
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     int n;
+//     cin >> n;
+//     vector<int> a(n);
+//     for (int i = 0; i < n; ++i) {
+//         cin >> a[i];
+//     }
+
+//     // Calculate the initial value of the sum for k = 0
+//     long long current_sum = 0;
+//     long long array_sum = 0;
+
+//     for (int i = 0; i < n; ++i) {
+//         current_sum += a[i] * i;
+//         array_sum += a[i];
+//     }
+
+//     long long max_sum = current_sum;
+
+//     // Calculate values for other k values using the relation
+//     for (int k = 1; k < n; ++k) {
+//         current_sum = current_sum + array_sum - n * a[n - k];
+//         max_sum = max(max_sum, current_sum);
+//     }
+
+//     cout << max_sum << endl;
+
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int sumCalculate( vector<int> &a){
+//     int sum = 0;
+//     for (int i = 0; i < a.size()-1; i++)
+//     {
+//         sum += abs(a[i]-a[i+1]);
+//     }
+//     return sum;
+// }
+
+// int main(){
+//     int t;cin>>t;
+//     while (t--)
+//     {
+//         int n;cin>>n;
+//         int k; cin>>k;
+//         vector<int> a(n);
+//         for (int i = 0; i < a.size(); i++)
+//         {
+//             cin>>a[i];
+//         }
+
+//         int currentSum = sumCalculate(a);
+//         int max_sum = currentSum;
+
+//         for (int i = 0; i < a.size(); i++)
+//         {
+//             int original = a[i];
+//             a[i] = 1;
+//             max_sum = max(max_sum,sumCalculate(a));
+//             a[i] = k;
+//             max_sum = max(max_sum,sumCalculate(a));
+//             a[i] = original;
+//         }
+        
+//         cout<<max_sum<<endl;
+//     }
+    
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;cin>>t;
+//     while (t--)
+//     {
+//         int n,x,c; cin>>n>>x>>c;
+
+//         vector<int> a(n);
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin>>a[i];
+//         }
+
+//         int maxCoin = 0;
+
+//         for (int i = 0; i < n; i++)
+//         {
+//             a[i] = max(a[i],(x-c));
+//             maxCoin += a[i];
+//         }
+        
+//         cout<<maxCoin<<endl;
+        
+//     }
+    
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;cin>>t;
+//     while (t--)
+//     {
+//         int n;cin>>n;
+
+//         vector<int> a(n);
+//         vector<int> b(n);
+
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin>>a[i];
+//         }
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin>>b[i];
+//         }
+
+//         vector<int> v(n);
+
+//         for (int i = 0; i < n; i++)
+//         {
+//             int z = (a[i] * 20) - (b[i] * 10);
+//             // cout<<z<<" ";
+//             if(z >= 0) v[i] = z;
+//             else v[i] = 0;
+//         }
+        
+//         int maxScore = 0;
+//         for (int i = 0; i < n; i++)
+//         {
+//             maxScore = max(maxScore,v[i]);
+//         }
+
+//         cout<<maxScore<<endl;
+        
+        
+//     }
+    
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+// int main(){
+//     ll t;cin>>t;
+//     while (t--)
+//     {
+//         ll n;cin>>n;
+//         string s;cin>>s;
+//         int hsh[26];
+//         for (int i = 0; i < 26; i++)
+//         {
+//             hsh[i] = 0;
+//         }
+        
+//         if(n % 2 == 0){
+//             for (ll i = 0; i < n; i++)
+//             {
+//                 hsh[s[i] - 'a']++;
+//             }
+            
+//             int f = 0;
+
+//             for (ll i = 0; i < 26; i++)
+//             {
+//                 if(hsh[i] % 2 != 0){
+//                     f = 1;
+//                     break;
+//                 }
+//             }
+
+//             if(f == 1) cout<<"NO"<<endl;
+//             else cout<<"YES"<<endl;
+            
+//         }
+//         else cout<<"NO"<<endl;
+
+//     }
+    
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+// int main(){
+//     ll t; cin>>t;
+//     while (t--)
+//     {
+//         ll n; cin>>n;
+//         string s; cin>>s;
+        
+//         ll ct = 0;
+
+//         for (ll i = 0; i < n; i++)
+//         {
+//             if(s[i] == '1' && s[i+1] == '0') ct++;
+//         }
+        
+//         cout<<ct<<endl;
+//     }
+    
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+// const int N = 10e5+10;
+// int hsh[N];
+// int main(){
+//     int n1,n2,n3; cin>>n1>>n2>>n3;
+//     vector<int> v1(n1);
+//     vector<int> v2(n2);
+//     vector<int> v3(n3);
+
+//     for (int i = 0; i < n1; i++)
+//     {
+//         cin>>v1[i];
+//     }
+//     for (int i = 0; i < n2; i++)
+//     {
+//         cin>>v2[i];
+//     }
+//     for (int i = 0; i < n3; i++)
+//     {
+//         cin>>v3[i];
+//     }
+
+//     int x = max(n1,n2);
+//     int y = max(n3,x);
+
+//     for (int i = 0; i < y; i++)
+//     {
+//         if(i < n1){hsh[v1[i]]++;}
+//         if(i < n2){hsh[v2[i]]++;}
+//         if(i < n3){hsh[v3[i]]++;}
+//     }
+//     vector<int> list;
+
+//     for (int i = 0; i <= 50000; i++)
+//     {
+//         if(hsh[i] >= 2) list.push_back(i);
+//     }
+//     cout<<list.size()<<endl;
+//     sort(list.begin(),list.end());
+//     for (int i = 0; i < list.size(); i++)
+//     {
+//         cout<<list[i]<<endl;
+//     }
+    
+    
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t; cin>>t;
+//     while(t--){
+//         int n; cin>>n;
+//     int hsh[11] = {0};
+//     for (int i = 0; i < n; i++)
+//     {
+//         int x; cin>>x;
+//         hsh[x]++;
+//     }
+//     int f = 0;
+//     int maxi = 0;
+//     int x = 0;
+
+//     for (int i = 0; i < 11; i++)
+//     {
+//         maxi = max(maxi,hsh[i]);
+//         if(hsh[i] == maxi) x = i;
+//     }
+
+//     for (int i = 0; i < 11; i++)
+//     {
+//         if(i != x && hsh[i] == maxi) f = 1;
+//     }
+    
+//     if(f == 1) cout<<"CONFUSED"<<endl;
+//     else cout<<x<<endl;
+//     }
+
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t; cin>>t;
+//     while (t--)
+//     {
+//         int n; cin>>n;
+//         string r,s; cin>>s>>r;
+//         int ctr = 0, cts = 0;
+//         for (int i = 0; i < n; i++)
+//         {
+//             if(r[i] == '1') ctr++;
+//             if(s[i] == '1') cts++;
+//         }
+
+//         if(ctr == cts) cout<<"YES"<<endl;
+//         else cout<<"NO"<<endl;
+        
+//     }
+    
+// }
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;cin>>t;
+    while (t--)
+    {
+        int n;cin>>n;
+        vector<pair<int,int>> v(n);
+
+        for (int i = 0; i < n; i++)
+        {
+            cin>>v[i].first>>v[i].second;
         }
 
-        ll max_freq = 0;
+        int point1 = 0, point2 = 0;
 
-        for (auto &it : uMap) {
-            max_freq = max(max_freq, it.second);
+        for (int i = 0; i < n; i++)
+        {
+            if(v[i].first > v[i].second) point1++;
+            else if(v[i].first < v[i].second) point2++;
+            else{
+                point1++; point2++;
+            }
         }
+        
+        if(point1 > point2) cout<<"0"<<" "<<point1<<endl;
+        else if(point1 < point2) cout<<"1"<<" "<<point2<<endl;
+        else cout<<"2"<<" "<<point1<<endl;
 
-        cout << n - max_freq << endl;
     }
-
     
 }
